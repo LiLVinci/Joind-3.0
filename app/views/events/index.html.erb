@@ -1,4 +1,4 @@
-<%= link_to "Back", :back %>
+<%= link_to "Back to Home", root_path %>
 <%= link_to "Create something!", new_event_path %>
 <h1>Projects and Activities</h1>
 
@@ -9,9 +9,10 @@
     <li>Date: <%= event.date %></li>
     <li>Time: <%= event.time %></li>
     <li>Location: <%= event.location %></li>
-    <li>Created by: <%= event.title %></li>
+    <li>Created by: <%= event.user.email %></li>
+    <%= link_to "Show Event", event_path(event) %>
   </ul>
 
 <% end %>
 
-<%# <% raise %> %>
+<%# <% raise %>
