@@ -1,2 +1,17 @@
-<h1>HELLO WORLD</h1>
-<h2>Vincent ist cool</h2>
+<%= link_to "Back", :back %>
+<%= link_to "Create something!", new_event_path %>
+<h1>Projects and Activities</h1>
+
+<% @events.each do |event| %>
+  <ul>
+    <li><%= event.title %></li>
+    <li><%= event.description %></li>
+    <li>Date: <%= event.date %></li>
+    <li>Time: <%= event.time %></li>
+    <li>Location: <%= event.location %></li>
+    <li>Created by: <%= event.title %></li>
+  </ul>
+
+<% end %>
+
+<%# <% raise %> %>
