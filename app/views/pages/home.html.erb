@@ -6,3 +6,9 @@
   <li><%=link_to "My Profile", root_path %></li>
   <li><%=link_to "Messages", root_path %></li>
 </ul>
+<%# <% raise %>
+<% if current_user =! nil %>
+  <p>You are signed in as <%= @user.email %></p>
+<% else %>
+  <p>You are currently not signed in </p>
+<% end %>
