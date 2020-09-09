@@ -1,13 +1,17 @@
-<h1>This is the Homepage then</h1>
+<h1>Home</h1>
 
 <ul>
   <li><%=link_to "Find Projects/Activities", events_path %></li>
   <li><%=link_to "Create Something", new_event_path %></li>
   <li><%=link_to "My Profile", root_path %></li>
   <li><%=link_to "Messages", root_path %></li>
+  <br>
+  <li><%=link_to "Login", new_user_session_path %></li>
+  <li><%=link_to "Sign up", new_user_registration_path %></li>
+  <li><%=button_to( "Sign out", destroy_user_session_path, :method => :delete) %></li>
 </ul>
 <%# <% raise %>
-<% if current_user =! nil %>
+<% if current_user != nil %>
   <p>You are signed in as <%= @user.email %></p>
 <% else %>
   <p>You are currently not signed in </p>
