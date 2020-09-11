@@ -1,1 +1,8 @@
-index.html.erb
+<h1>Requests Overview</h1>
+
+<% @requests.each do |request| %>
+  <ul>
+    <li><%= request.event.title %> <%=link_to "View Event", event_path(request.event) %></li>
+    <li>--> Status: <%= request.status %> </li>
+  </ul>
+<% end %>
