@@ -10,7 +10,10 @@ class EventsController < ApplicationController
   def show
     
     @event = Event.find(params[:id])
+    @request_done = current_user.requests.find_by(event: @event)
     authorize @event
+
+
   end
 
   def new
