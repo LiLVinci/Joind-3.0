@@ -21,11 +21,13 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(event_params)
     @event.user = current_user
+    @event.category = Category.find_by(category: "Sports")
     authorize @event
     if @event.save
       redirect_to @event
     else
-      render :new
+      # render :new
+      raise
     end
   end
 
