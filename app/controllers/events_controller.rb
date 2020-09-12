@@ -36,21 +36,21 @@ class EventsController < ApplicationController
 
   def edit
     @event = Event.find(params[:id])
-    #authorize @event
+    authorize @event
   end
 
   def update
     @event = Event.find(params[:id])
     @event.update(event_params)
-    #authorize @event
+    authorize @event
     redirect_to @event
   end
 
   def destroy
     @event = Event.find(params[:id])
-    @event.update(event_params)
-    # authorize @event
-    redirect_to @event
+    @event.destroy
+    authorize @event
+    redirect_to events_path
   end
 
   private

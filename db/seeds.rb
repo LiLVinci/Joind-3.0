@@ -9,6 +9,8 @@
 puts "Seeding Users..."
 me = User.new(name: "Vincent Wittek", email: "wittek.vincent@gmail.com", age: 20, gender: "male", description: "Hi there", instagram: "www.instagram.com", facebook: "www.facebook.com", linkedin: "www.linkedin.com", password: "123456")
 me.save!
+me = User.new(name: "Test Account", email: "test@gmail.com", age: 20, gender: "male", description: "This is a test account", instagram: "www.instagram.com", facebook: "www.facebook.com", linkedin: "www.linkedin.com", password: "123456")
+me.save!
 puts "Seeding Users done!"
 
 puts "Seeding Categories..."
