@@ -8,10 +8,14 @@
 <p>Location: <%= @event.location %></p>
 <p>Host: <%= @event.user.email %></p>
 
-<% if @request_done == nil %>
-  <%= button_to "Join!", event_requests_path(@event), method: :post %>
+<% if @event.user_id == current_user.id %>
+  <%= link_to "Edit your event", edit_event_path(@event) %>
 <% else %>
-  <p>Status for this project/activity: <%= @current_user.requests.find_by(event: @event).status %></p>
+  <% if @request_done == nil %>
+    <%= button_to "Join!", event_requests_path(@event), method: :post %>
+  <% else %>
+    <p>Status for this project/activity: <%= @current_user.requests.find_by(event: @event).status %></p>
+  <% end %>
 <% end %>
 
-<%#<% raise %>
+<%# <% raise %>

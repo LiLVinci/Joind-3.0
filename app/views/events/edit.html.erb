@@ -1,1 +1,15 @@
-edit.html.erb
+<%= link_to "Back", :back %>
+<h1>Edit your Event</h1>
+
+
+<%= form_for(@event) do |f| %>
+  <%= f.text_field :title %>
+  <%# <%= f.select :category, [1,2,3,4,5], :prompt => "Select One" %>
+
+  <%= f.text_area :description %>
+  <%= f.date_field :date %>
+  <%= f.time_field :time %>
+  <%= f.text_field :location %>
+  <%= f.submit "Create" %>
+<% end %>
+<%= button_to "Delete this Event", event_path, method: "delete" %>
