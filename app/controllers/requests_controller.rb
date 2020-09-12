@@ -17,4 +17,12 @@ class RequestsController < ApplicationController
       render :show
     end
   end
+
+  def validate
+    @request = Request.find(params[:id])
+    @request.update(status: params[:value])
+    authorize @request
+     
+    redirect_to myevents_path
+  end
 end

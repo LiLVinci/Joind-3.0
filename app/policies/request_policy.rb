@@ -5,6 +5,11 @@ class RequestPolicy < ApplicationPolicy
     end
   end
   
+  def validate?
+    # true
+    record.event.user == user
+  end
+  
   def create?
     true
   end
