@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   
-  resources :users, only: [:show]
+  resources :users, only: [:show, :edit, :update]
 
   resources :requests, only: [:index, :show, :edit, :update] do
     member do

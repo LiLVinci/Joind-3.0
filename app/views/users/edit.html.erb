@@ -1,0 +1,15 @@
+<h1>Edit Profile</h1>
+
+<%= form_for(@user) do |f| %>
+  <%= f.text_field :name %>
+  <%# <%= f.select :category, [1,2,3,4,5], :prompt => "Select One" %>
+
+  <%= f.text_area :description %>
+  <%= f.select :gender, ["male", "female", "other"] %>
+  <%= f.number_field :age %>
+  <%= f.text_field :email %>
+  <%= f.text_field :instagram %>
+  <%= f.text_field :facebook %>
+  <%= f.text_field :linkedin %>
+  <%= f.submit "Save" %>
+<% end %>
