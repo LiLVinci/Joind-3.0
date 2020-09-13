@@ -3,14 +3,16 @@
 <ul>
   <li><%=link_to "Find Projects/Activities", events_path %></li>
   <li><%=link_to "Create Something", new_event_path %></li>
-  <li><%=link_to "My Profile", user_path(current_user) %></li>
-  <li><%=link_to "Messages", root_path %></li>
+  <% if user_signed_in? %>
+    <li><%=link_to "My Profile", user_path(current_user) %></li>
+    <li><%=link_to "Messages", root_path %></li>
+  <% end %>
   <li><%=link_to "My Requests", requests_path %></li>
   <li><%=link_to "My Events", myevents_path %></li>
   <br>
   <li><%=link_to "Login", new_user_session_path %></li>
   <li><%=link_to "Sign up", new_user_registration_path %></li>
-  <li><%=button_to( "Sign out", destroy_user_session_path, :method => :delete) %></li>
+  <li><%=button_to "Sign out", destroy_user_session_path, :method => :delete %></li>
 </ul>
 <%# <% raise %>
 <% if current_user != nil %>
