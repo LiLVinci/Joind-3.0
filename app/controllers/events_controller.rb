@@ -10,7 +10,9 @@ class EventsController < ApplicationController
   def show
     
     @event = Event.find(params[:id])
-    @request_done = current_user.requests.find_by(event: @event)
+    if user_signed_in?
+      @request_done = current_user.requests.find_by(event: @event)
+    end
     authorize @event
 
 
@@ -29,8 +31,7 @@ class EventsController < ApplicationController
     if @event.save
       redirect_to @event
     else
-      # render :new
-      raise
+      render :new
     end
   end
 
