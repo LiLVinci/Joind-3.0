@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_one_attached :image
   has_many :events
   has_many :requests
   # Include default devise modules. Others available are:
