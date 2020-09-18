@@ -32,3 +32,56 @@
   }
 
 }
+
+.section-instruction-cards {
+  background-color: lightgray;
+  padding: 50px 0;
+
+}
+
+.instruction-card {
+  background-image: url(asset_path("home-banner-image.jpg"));
+  background-size: cover;
+  width: 23em;
+  height: 15em;
+  border: 1px solid black;
+
+  h1{
+    padding: 35px 0 0 0;
+  }
+  p {
+    padding: 20px 50px;
+  }
+}
+
+.explanation-card {
+  background-color: white;
+
+  margin: 30px 0;
+  border-radius: 13px;
+  width: 100%;
+  height: 400px;
+}
+
+.explanation-card-text {
+  width: 60%;
+  padding: 40px;
+}
+
+.explanation-card-image {
+  background-image: url(asset_path("explanation-card-image.jpg"));
+  background-size: cover;  
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0 13px 13px 0;
+}
+
+.explanation-buttons {
+  display: flex;
+  justify-content: space-around;
+  .btn{
+    height: 60px;
+    width: 500px;
+  }
+}
