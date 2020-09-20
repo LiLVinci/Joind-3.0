@@ -1,3 +1,43 @@
+<div class="section-event-show">
+  <div class="container">
+    <div class="event-show-card">
+      <div class="event-show-card-top d-flex">
+        <div class="event-show-card-image">
+          <%= cl_image_tag @event.image.key %>
+        </div>
+        <div class="event-show-card-info">
+          <h1><%= @event.title %></h1>
+          <div class="event-show-card-host d-flex align-items-center">
+            <%= cl_image_tag @event.user.image.key, height: 45, width: 45 %>
+            <p><%= @event.user.name %></p>
+          </div>
+          <div class="event-show-card-date-time d-flex">
+            <p>DATE: <%= @event.date.strftime("%e %b %Y") %> | LOCATION: <%= @event.location %></p>
+          </div>
+        </div>
+      </div>
+      <div class="event-show-card-bottom">
+        <p><%= @event.description %></p>
+        <div class="event-show-card-request-question d-flex">
+          <%= cl_image_tag @event.user.image.key, height: 60, width: 60 %>
+          <div class="event-show-card-form">
+          </div>
+        </div>
+        <div class="event-show-card-request-question-submit d-flex justify-content-end">
+          <button class="btn btn-primary">Send!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 <%= link_to "Back to all Projects and Activities", events_path %>
 
 <h1><%= @event.title %></h1>
