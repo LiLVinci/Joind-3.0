@@ -1,6 +1,6 @@
 <div class="section-event-show">
   <div class="container">
-    <div class="event-show-card">
+    <div class="big-card">
       <div class="event-show-card-top d-flex">
         <div class="event-show-card-image">
           <%= cl_image_tag @event.image.key %>
@@ -19,7 +19,7 @@
       <div class="event-show-card-bottom">
         <p><%= @event.description %></p>
         <div class="event-show-card-request-question d-flex">
-          <%= cl_image_tag @event.user.image.key, height: 60, width: 60 %>
+          <%= cl_image_tag @event.user.image.key, height: 75, width: 75 %>
           <div class="event-show-card-form">
           </div>
         </div>

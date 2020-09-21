@@ -16,5 +16,5 @@ Rails.application.routes.draw do
     resources :requests, only: [:new, :create]
   end
 
-  get "myevents", to: "users#myevents"
+  get "events_overview", to: "users#events_overview"
 end

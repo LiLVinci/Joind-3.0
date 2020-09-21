@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     authorize @user
   end
 
-  def myevents
+  def events_overview
     skip_authorization
     @myevents = Event.where(user_id = current_user.id.to_s)
   end

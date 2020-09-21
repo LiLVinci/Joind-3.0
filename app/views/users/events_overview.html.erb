@@ -1,0 +1,138 @@
+<div class="body-event-overview">
+  <div class="section section-event-overview-title">
+    <div class="container text-center">
+      <h1>Event Overview</h1>
+    </div>
+  </div>
+  <div class="section section-event-overview-upcoming">
+    <div class="container">
+      <div class="event-overview-card big-card">
+        <div class="event-overview-big-card-title">
+          <h1>Upcoming Events:</h1>
+        </div>
+        <div class="event-overview-card-upcoming-events row">
+          <% @myevents.each do |event| %>
+          <div class="event-card-with-category col-lg-4 col-12 col-md-6">
+            <div class="event-card">
+              <%= link_to event_path(event) do %>
+                <div class="event-text">
+                  <h1><%= event.title %></h1>
+                  <p><%= event.description %></p>
+                </div>
+              <% end %>
+              <div class="event-other-info d-flex align-items-center">
+                <div class="event-index-participants">
+                  <%= cl_image_tag event.user.image.key, height: 30, width: 30 %>
+                  <%= event.user.name %>
+                </div>
+                <div class="event-index-date-location">
+                  <p><%= event.date.strftime("%e %b %Y") %></p>
+                  <p><%= event.location %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-event-overview-upcoming">
+    <div class="container">
+      <div class="event-overview-card big-card">
+        <div class="event-overview-big-card-title">
+          <h1>My Events:</h1>
+        </div>
+        <div class="event-overview-card-upcoming-events row">
+          <% @myevents.each do |event| %>
+            <div class="event-card-with-category col-lg-4 col-12 col-md-6">
+              <div class="event-card">
+                <%= link_to event_path(event) do %>
+                  <div class="event-text">
+                    <h1><%= event.title %></h1>
+                    <p><%= event.description %></p>
+                  </div>
+                <% end %>
+                <div class="event-other-info d-flex align-items-center">
+                  <div class="event-index-participants">
+                    <%= cl_image_tag event.user.image.key, height: 30, width: 30 %>
+                    <%= event.user.name %>
+                  </div>
+                  <div class="event-index-date-location">
+                    <p><%= event.date.strftime("%e %b %Y") %></p>
+                    <p><%= event.location %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-event-overview-upcoming">
+    <div class="container">
+      <div class="event-overview-card big-card">
+        <div class="event-overview-big-card-title">
+          <h1>Requested Events:</h1>
+        </div>
+        <div class="event-overview-card-upcoming-events row">
+          <% @myevents.each do |event| %>
+          <div class="event-card-with-category col-lg-4 col-12 col-md-6">
+            <div class="event-card">
+              <%= link_to event_path(event) do %>
+                <div class="event-text">
+                  <h1><%= event.title %></h1>
+                  <p><%= event.description %></p>
+                </div>
+              <% end %>
+              <div class="event-other-info d-flex align-items-center">
+                <div class="event-index-participants">
+                  <%= cl_image_tag event.user.image.key, height: 30, width: 30 %>
+                  <%= event.user.name %>
+                </div>
+                <div class="event-index-date-location">
+                  <p><%= event.date.strftime("%e %b %Y") %></p>
+                  <p><%= event.location %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= link_to "Back", :back %>
+<h1>My Projects/Activities</h1>
+
+<% @myevents.each do |event|%>
+  <ul>
+    <li>Name: <%= event.title %> <%= link_to "Show", event_path(event) %> | <%= link_to "Edit", edit_event_path(event) %> </li>
+    <li>Requests:</li>
+    <ul> 
+      <% event.requests.each do |request| %>
+        <li>Event Name: <%= request.event.title %> | <%= link_to "Show Event", event_path(request.event) %></li>
+        <li>Requested by: <%= request.user.name %></li>
+        <li>Current status: <%= request.status %></li>
+        <%# <%= button_to "Accept", edit_request_path %>
+        <% if request.status == "pending" %>
+          <%= button_to validate_request_path(id: request, value: "accepted"), method: :patch do %>
+            <p>Accept</p>
+          <% end %>
+          <%= button_to validate_request_path(id: request, value: "declined"), method: :patch do %>
+            <p>Decline</p>
+          <% end %>
+        <% end %>
+        <%# <% raise %>
+        <br>
+      <% end %>
+    </ul>
+
+  </ul>
+<% end %> %>

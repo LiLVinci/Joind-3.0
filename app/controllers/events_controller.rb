@@ -4,7 +4,9 @@ class EventsController < ApplicationController
 
   def index
     # @events = Event.all
-    @events = policy_scope(Event).order(created_at: :desc)
+    # @events = policy_scope(Event).order(created_at: :desc)
+    @events = Event.all.order(created_at: :desc)
+    skip_authorization
   end
 
   def show

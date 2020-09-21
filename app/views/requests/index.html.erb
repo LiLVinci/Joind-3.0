@@ -1,8 +1,148 @@
-<h1>Requests Overview</h1>
+<div class="body-requests-overview">
+  <div class="section section-requests-overview-title">
+    <div class="container text-center">
+      <h1>Requests Overview</h1>
+    </div>
+  </div>
+  <div class="section section-incoming-requests">
+    <div class="container">
+      <div class="big-card incoming-requests-card">
+        <div class="incoming-requests-big-card-title">
+          <h1>Incoming Requests:</h1>
+        </div>
+        <div class="incoming-requests-big-card-requests">
+          <% @incoming_requests.each do |request| %>
+            <div class="request-card d-flex">
+              <div class="event-card-with-category col-lg-4 col-12 col-md-6">
+                <div class="event-card">
+                  <%= link_to event_path(request.event) do %>
+                    <div class="event-text">
+                      <h1><%= request.event.title %></h1>
+                      <p><%= request.event.description %></p>
+                    </div>
+                  <% end %>
+                  <div class="event-other-info d-flex align-items-center">
+                    <div class="event-index-participants">
+                      <%= cl_image_tag request.event.user.image.key, height: 30, width: 30 %>
+                      <%= request.event.user.name %>
+                    </div>
+                    <div class="event-index-date-location">
+                      <p><%= request.event.date.strftime("%e %b %Y") %></p>
+                      <p><%= request.event.location %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="request-reaction-card big-card d-flex flex-column ">
+                <div class="request-reaction-card-top">
+                  <div class="request-reaction-card-user d-flex justify-content-between">
+                    <div>
+                      <h1>BY:</h1>
+                    </div>
+                    <div>
+                      <h1> <%= cl_image_tag request.user.image.key, class:"avatar" %> <%=request.user.name%></h1>
+                    </div>
+                    <button class="btn-standard btn btn-primary">Send Message</button>
+                  </div>
+                  <div class="request-reaction-card-description">
+                    <p>[HERE THE DESCRIPTION SHOULD BE]</p>
+                  </div>
+                </div>
+                <div class="request-reaction-card-buttons d-flex justify-content-around mt-auto">
+                  <%= button_to validate_request_path(id: request, value: "declined"), class: "btn-reaction btn-btn-danger", method: :patch do %>
+                    <p><button class="btn-reaction btn btn-danger">Decline</button></p>
+                  <% end %>
+                  <%= button_to validate_request_path(id: request, value: "accepted"), method: :patch do %>
+                    <button class="btn-reaction btn btn-success">Accept</button>
+                  <% end %>
+                </div>
 
-<% @requests.each do |request| %>
-  <ul>
-    <li><%= request.event.title %> <%=link_to "View Event", event_path(request.event) %></li>
-    <li>--> Status: <%= request.status %> </li>
-  </ul>
-<% end %>
+              </div>
+
+            </div>
+          <% end %>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="section section-incoming-requests">
+    <div class="container">
+      <div class="big-card incoming-requests-card">
+        <div class="incoming-requests-big-card-title">
+          <h1>Outgoing Requests:</h1>
+        </div>
+        <div class="incoming-requests-big-card-requests">
+          <% @outgoing_requests.each do |request| %>
+            <div class="request-card d-flex">
+              <div class="event-card-with-category col-lg-4 col-12 col-md-6">
+                <div class="event-card">
+                  <%= link_to event_path(request.event) do %>
+                    <div class="event-text">
+                      <h1><%= request.event.title %></h1>
+                      <p><%= request.event.description %></p>
+                    </div>
+                  <% end %>
+                  <div class="event-other-info d-flex align-items-center">
+                    <div class="event-index-participants">
+                      <%= cl_image_tag request.event.user.image.key, height: 30, width: 30 %>
+                      <%= request.event.user.name %>
+                    </div>
+                    <div class="event-index-date-location">
+                      <p><%= request.event.date.strftime("%e %b %Y") %></p>
+                      <p><%= request.event.location %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="request-reaction-card big-card d-flex flex-column ">
+                <div class="request-reaction-card-top">
+                
+                  <div class="request-reaction-card-user d-flex justify-content-between">
+                    <div>
+                      <h1>BY:</h1>
+                    </div>
+                    <div>
+                      <h1> <%= cl_image_tag request.user.image.key, class:"avatar" %> <%=request.user.name%></h1>
+                    </div>
+                    <button class="btn-standard btn btn-primary">Send Message</button>
+                  </div>
+                  <div class="request-reaction-card-description">
+                    <p>[HERE THE DESCRIPTION SHOULD BE]</p>
+                  </div>
+                </div>
+                <% if request.status == "accepted" %>
+                  <div class="request-reaction-card-status-accepted d-flex justify-content-center align-items-center mt-auto">
+                    <h1>STATUS: <%=request.status %></h1>
+                  </div>
+                <% elsif request.status == "declined"%>
+                  <div class="request-reaction-card-status-declined d-flex justify-content-center align-items-center mt-auto">
+                    <h1>STATUS: <%=request.status %></h1>
+                  </div>
+                <% else %>
+                  <div class="request-reaction-card-status-pending d-flex justify-content-center align-items-center mt-auto">
+                    <h1>STATUS: <%=request.status %></h1>
+                  </div>
+                <% end %>
+              </div>
+
+            </div>
+          <% end %>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<%# <% raise %> %>

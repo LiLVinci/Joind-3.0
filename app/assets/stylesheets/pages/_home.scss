@@ -12,7 +12,7 @@
 .home-banner-text{
   width: 600px;
   color: white;
-  text-shadow: 0 0 10px rgb(0, 0, 0);
+  text-shadow: $standard-shadow;
 
   .home-banner-header {
     font-size: 50px 

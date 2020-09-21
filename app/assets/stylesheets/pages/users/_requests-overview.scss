@@ -1,0 +1,40 @@
+
+
+
+
+.request-card {
+  background-color: lightgray;
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+.request-reaction-card {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.btn-reaction {
+  width: 40%;
+}
+
+.request-reaction-card-status-pending {
+  width: 100%;
+  padding: -25px;
+  background-color: $yellow;
+}
+
+.request-reaction-card-status-accepted {
+  width: 100%;
+  padding: -25px;
+  background-color: $green;
+}
+
+.request-reaction-card-status-declined {
+  width: 100%;
+  padding: -25px;
+  background-color: $red;
+}
+
+.request-reaction-card-top {
+  padding: 0 25px;
+}
