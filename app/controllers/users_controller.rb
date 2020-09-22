@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
 
   def show
-    @user = current_user
+    @user = User.find(params[:id])
+    @user_events = @user.events
     authorize @user
   end
 

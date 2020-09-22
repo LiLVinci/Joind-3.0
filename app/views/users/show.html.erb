@@ -1,3 +1,77 @@
+<div class="section-profile">
+  <div class="container">
+    <div class="big-card">
+      <div class="profile-top d-flex justify-content-between">
+        <h1><%= @user.name %>'s Profile:</h1>
+        <button class="btn btn-standard">Send Message</button>
+      </div>
+      <div class="profile-bottom text-center">
+        <%= cl_image_tag @user.image.key, class:"avatar", height: 150, width: 150, crop: :fill %>
+        <h1><%= @user.name %></h1>
+        <div class="profile-social-media d-flex justify-content-around">
+          <% if @user.instagram?  %>
+            <%= link_to @user.instagram do %>
+              <%= image_tag "instagram.png", :style => "height: 25px" %>
+            <% end %>
+          <% end %>
+          <% if @user.facebook? %>
+            <%= link_to @user.facebook do %>
+              <%= image_tag "facebook.png", :style => "height: 25px" %>
+            <% end %>
+          <% end %>
+          <% if @user.linkedin? %>
+            <%= link_to @user.linkedin do %>
+              <%= image_tag "linkedin.png", :style => "height: 25px" %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="profile-description">
+          <p><%= @user.description %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section-event-overview-upcoming">
+  <div class="container">
+    <div class="event-overview-card big-card">
+      <div class="event-overview-big-card-title">
+        <h1><%= @user.name %>'s Events:</h1>
+      </div>
+      <div class="event-overview-card-upcoming-events row">
+        <% @user_events.each do |event| %>
+        <div class="event-card-with-category col-lg-4 col-12 col-md-6">
+          <div class="event-card">
+            <%= link_to event_path(event) do %>
+              <div class="event-text">
+                <h1><%= event.title %></h1>
+                <p><%= event.description %></p>
+              </div>
+            <% end %>
+            <div class="event-other-info d-flex align-items-center">
+              <div class="event-index-participants">
+                <%= cl_image_tag event.user.image.key, height: 30, width: 30 %>
+                <%= event.user.name %>
+              </div>
+              <div class="event-index-date-location">
+                <p><%= event.date.strftime("%e %b %Y") %></p>
+                <p><%= event.location %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 <h1>My Profile</h1>
 
 <p>Name: <%= @user.name %></p>
