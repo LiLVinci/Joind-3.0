@@ -41,6 +41,7 @@
 
 .instruction-card {
   background-image: url(asset_path("home-banner-image.jpg"));
+  background-blend-mode: overlay;
   background-size: cover;
   width: 400px;
   height: 15em;

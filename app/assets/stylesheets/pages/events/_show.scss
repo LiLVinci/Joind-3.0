@@ -28,6 +28,7 @@
   img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -36,6 +37,7 @@
   img {
     border-radius: 50%;
     margin-right: 10px;
+    object-fit: cover;
   }
 
   p {
@@ -53,6 +55,7 @@
 
   img {
     border-radius: 50%;
+    object-fit: cover;
   }
 }
 

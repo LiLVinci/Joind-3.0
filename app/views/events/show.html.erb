@@ -8,6 +8,8 @@
         <div class="event-show-card-info">
           <h1><%= @event.title %></h1>
           <div class="event-show-card-host d-flex align-items-center">
+            <p>BY:   </p>
+            <br>
             <%= cl_image_tag @event.user.image.key, height: 45, width: 45 %>
             <p><%= @event.user.name %></p>
           </div>
