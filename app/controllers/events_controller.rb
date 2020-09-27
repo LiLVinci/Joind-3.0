@@ -12,6 +12,7 @@ class EventsController < ApplicationController
   def show
     
     @event = Event.find(params[:id])
+    @participants = Participation.all.where(event: @event)
     if user_signed_in?
       @request_done = current_user.requests.find_by(event: @event)
     end

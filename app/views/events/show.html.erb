@@ -8,10 +8,24 @@
         <div class="event-show-card-info">
           <h1><%= @event.title %></h1>
           <div class="event-show-card-host d-flex align-items-center">
-            <p>BY:   </p>
+            <p>BY: </p>
             <br>
             <%= cl_image_tag @event.user.image.key, height: 45, width: 45 %>
             <p><%= @event.user.name %></p>
+          </div>
+          <p>PARTICIPANTS: </p>
+            <br>
+          <div class="event-show-card-participants d-flex align-items-center">
+            <% if @participants.empty? %>
+              <p>[0/<%= @event.max_participants %>]</p>
+              <br>
+              <p>There is no one registered as participant yet. BE THE FIRST ONE!</p>
+            <% else %>
+              [<%= @participants.count %>/<%= @event.max_participants %>]
+              <% @participants.each do |participant| %>
+                <%= cl_image_tag participant.user.image.key, height: 45, width: 45 %>
+              <% end %>
+            <% end %>
           </div>
           <div class="event-show-card-date-time d-flex">
             <p>DATE: <%= @event.date.strftime("%e %b %Y") %> | LOCATION: <%= @event.location %></p>

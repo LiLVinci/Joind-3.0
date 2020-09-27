@@ -45,8 +45,11 @@
           <div class="event-card">
             <%= link_to event_path(event) do %>
               <div class="event-text">
-                <h1><%= event.title %></h1>
-                <p><%= event.description %></p>
+                <%= cl_image_tag event.image.key, class: "event-index-image" %>
+                <div class="event-title-description">
+                  <h1><%= event.title %></h1>
+                  <p><%= event.description %></p>         
+                </div>
               </div>
             <% end %>
             <div class="event-other-info d-flex align-items-center">

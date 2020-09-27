@@ -1,6 +1,9 @@
 // Import page-specific CSS files here.
 @import "home";
-
+html {
+  min-height: 100%;
+  position: relative;
+}
 .container {
   max-width: 75%;
   margin: 0 auto;

@@ -3,6 +3,7 @@ class Event < ApplicationRecord
   belongs_to :user
   belongs_to :category
   has_many :requests, dependent: :destroy
+  has_many :participations
   # has_many :users
 
   validates :title, presence: true

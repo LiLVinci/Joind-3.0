@@ -36,6 +36,9 @@ class RequestsController < ApplicationController
   def validate
     @request = Request.find(params[:id])
     @request.update(status: params[:value])
+    if @request.status == "accepted"
+      Participation.create(user_id: @request.user_id, event_id: @request.event_id)
+    end
     # authorize @request
     skip_authorization
     redirect_to requests_path
