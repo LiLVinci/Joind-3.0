@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_17_185234) do
+ActiveRecord::Schema.define(version: 2020_09_22_213548) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_09_17_185234) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
     t.integer "category_id", null: false
+    t.integer "max_participants"
     t.index ["category_id"], name: "index_events_on_category_id"
     t.index ["user_id"], name: "index_events_on_user_id"
   end
@@ -59,6 +60,7 @@ ActiveRecord::Schema.define(version: 2020_09_17_185234) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
     t.integer "event_id"
+    t.text "description", default: "Hi there! I would love to join your project/activity!"
     t.index ["event_id"], name: "index_requests_on_event_id"
     t.index ["user_id"], name: "index_requests_on_user_id"
   end

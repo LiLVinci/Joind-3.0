@@ -9,6 +9,10 @@ class RequestPolicy < ApplicationPolicy
     # true
     # record.event.user == user
   end
+
+  def new?
+    true
+  end
   
   def create?
     true

@@ -15,6 +15,8 @@ class EventsController < ApplicationController
     if user_signed_in?
       @request_done = current_user.requests.find_by(event: @event)
     end
+    @request = Request.new
+
     authorize @event
 
 

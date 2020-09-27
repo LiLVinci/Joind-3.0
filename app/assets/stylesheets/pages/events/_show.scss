@@ -45,6 +45,7 @@
 
 .event-show-card-bottom {
   margin-top: 25px;
+  padding-bottom: 40px;
 
 }
 
@@ -57,11 +58,21 @@
 
 .event-show-card-form {
   margin-left: 15px;
-  background-color: lightgray;
   height: 75px;
   width: 100%;
+  border-radius: 12px;
+  
+  textarea {
+    width: 100%;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.089);
+    height: 75px;
+    width: 100%;
+    border-radius: 12px;
+    resize: none;
+  }
 }
 
 .event-show-card-request-question-submit {
-  padding-top: 20px;
+
 }

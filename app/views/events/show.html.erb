@@ -21,10 +21,13 @@
         <div class="event-show-card-request-question d-flex">
           <%= cl_image_tag @event.user.image.key, height: 75, width: 75 %>
           <div class="event-show-card-form">
+            <%= form_for (@request) do |f| %>
+              <%= f.text_area :description, value: "Say why you want to join 😊 ..." %>
+              <div class="event-show-card-request-question-submit d-flex justify-content-end action">
+                <%= f.submit "Send!", class: "btn btn-primary d-flex justify-content-end" %>
+              </div>
+            <% end %>
           </div>
-        </div>
-        <div class="event-show-card-request-question-submit d-flex justify-content-end">
-          <button class="btn btn-primary">Send!</button>
         </div>
       </div>
     </div>

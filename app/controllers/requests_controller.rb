@@ -40,4 +40,10 @@ class RequestsController < ApplicationController
     skip_authorization
     redirect_to requests_path
   end
+
+  private
+
+  def request_params
+    params.require(:request).permit(:description)
+  end
 end

@@ -1,0 +1,36 @@
+<div class="footer-section">
+  <div class="container">
+    <div class="footer-body d-flex justify-content-between align-items-center">
+      <div class="footer-part social-media-footer text-center">
+        <p>Follow Joind on:</p>
+        <div class="social-media-footer-icons d-flex justify-content-between">
+          <a href="www.whatsapp.com">
+            <%= image_tag "whatsapp_footer.png" %> 
+          </a>
+          <a href="www.instagram.com">
+            <%= image_tag "instagram_footer.png" %> 
+          </a>
+          <a href="www.facebook.com">
+            <%= image_tag "facebook_footer.png" %> 
+          </a>
+          <a href="www.linkedin.com">
+            <%= image_tag "linkedin_footer.png" %> 
+          </a>
+        </div>
+      </div>
+      <div class="footer-part footer-links-to-pages text-center">
+        <%= link_to "About", pages_about_path %>
+        <br>
+        <%= link_to "Feedback", pages_feedback_path %>
+        <br>
+        <%= link_to "Contact", root_path %>
+        <br>
+        <%= link_to "Home", root_path %>
+        <br>
+      </div>
+      <div class="footer-part footer-credits text-center">
+        <p>This page was build and hosted by Vincent Wittek, 2020</p>
+      </div>
+    </div>
+  </div>
+</div>
