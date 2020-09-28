@@ -6,7 +6,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="navbar-right collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="navbar-links">
+    <div class="navbar-links d-flex align-items-center">
       <%= link_to "Home", root_path %>
       <%= link_to "Find", events_path %>
       <%= link_to "Create", new_event_path %>
@@ -16,13 +16,13 @@
       <% end %>
       <% if user_signed_in? %>
         <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        <div class= "navbar-profile-img" >
+          <%= cl_image_tag current_user.image.key %> 
+        </div>
       <% else %>
         <%=link_to "Login", new_user_session_path %>  
         <%=link_to "Sign up", new_user_registration_path %>
-      <% end%>
-    </div>
-    <div navbar-profile-img>
-      <%= image_tag("profile-vincent.jpg", :class => "rounded-circle navbar-profile-img") %> 
+      <% end %>
     </div>
   </div>
 </div>

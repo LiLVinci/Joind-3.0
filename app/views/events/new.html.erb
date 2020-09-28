@@ -4,7 +4,9 @@
 
 <%= form_for(@event) do |f| %>
   <%= f.text_field :title %>
-  <%# <%= f.select :category, [1,2,3,4,5], :prompt => "Select One" %>
+  <%= f.select :category, [["Sports", 1], ["Project", 2], ["Creative", 3], ["Startup", 4], ["Social", 5], ["Other", 6]], :prompt => "Select One" %>
+  <%# <%= f.select :category, ["Sports", "Project", "Creative", "Startup", "Social", "Other"], :prompt => "Select One" %>
+  <%# <%= f.select(:person, :city_id, [['Lisbon', 1], ['Madrid', 2], ['Berlin', 3]]) %> 
 
   <%= f.text_area :description %>
   <%= f.file_field :image %>

@@ -31,7 +31,7 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(event_params)
     @event.user = current_user
-    @event.category = Category.find_by(category: "Sports")
+    @event.category = Category.find_by(id: params[:event][:category])
     authorize @event
     if @event.save
       redirect_to @event
