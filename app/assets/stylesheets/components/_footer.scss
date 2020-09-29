@@ -20,6 +20,13 @@
   img {
     height: 25px;
     padding: 0 5px;
+    transition: 0.3s;
   }
 
+}
+
+.social-media-footer-icons img:hover {
+  
+  opacity: 0.5;
+  
 }
