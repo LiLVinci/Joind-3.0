@@ -12,7 +12,7 @@
       <%= link_to "Create", new_event_path %>
       <% if user_signed_in? %>
         <%= link_to "Messages", root_path %>
-        <%= link_to "Profile", root_path %>
+        <%= link_to "Profile", user_path(current_user) %>
       <% end %>
       <% if user_signed_in? %>
         <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>

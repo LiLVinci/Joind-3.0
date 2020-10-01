@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 2020_09_27_215816) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
     t.integer "event_id"
-    t.text "description", default: "Hi there! I would love to join your project/activity!"
+    t.text "description"
     t.index ["event_id"], name: "index_requests_on_event_id"
     t.index ["user_id"], name: "index_requests_on_user_id"
   end

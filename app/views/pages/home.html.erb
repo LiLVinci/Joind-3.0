@@ -9,17 +9,17 @@
       </p>
       <div class="home-banner-buttons">
         <button class="btn btn-light btn-big">
-          Create!
+          <%=link_to "Create!", new_event_path %>
         </button>
         <button class="btn btn-primary btn-standard btn-big">
-          Find!
+          <%=link_to "Find!", events_path %>
         </button>
       </div> 
     </div>
   </div>
 </div>
 
-<div class="section-instruction-cards">
+<%# <div class="section-instruction-cards">
   <div class="container d-flex justify-content-between align-items-center">
     <div class="instruction-card-find instruction-card text-center">
       <h1>Find</h1>
@@ -32,6 +32,30 @@
     <div class="instruction-card-experience instruction-card text-center">
       <h1>Experience</h1>
       <p>Experience a new and better level of free time at University!</p>
+    </div>
+  </div>
+</div> %>
+
+<div class="section-guide-cards">
+  <div class="container">
+    <div class="big-card d-flex justify-content-between">
+      <div class="guide-card guide-card-find text-center">
+        <h1>Find</h1>
+        <%=image_tag "ill_find.png" %>
+        <p>Choose from various parojects and activities others have created and join them!</p>
+      </div> 
+      <div class="divider-line"></div>
+      <div class="guide-card guide-card-create text-center">
+        <h1>Create</h1>
+        <%=image_tag "ill_create.png" %>
+        <p>Create your own projects or activites which others can then join!</p>
+      </div> 
+      <div class="divider-line"></div>
+      <div class="guide-card guide-card-experience text-center">
+        <h1>Experience</h1>
+        <%=image_tag "ill_experience.png" %>
+        <p>Experience a new and better level of free time at University!</p>
+      </div> 
     </div>
   </div>
 </div>
@@ -53,10 +77,10 @@
   <div class="container">
     <div class="explanation-buttons">
       <button class="btn btn-light btn-big">
-        More About Joind
+        <%=link_to "More About Joind", pages_about_path %>
       </button>
       <button class="btn btn-standard btn-primary btn-big">
-        Join something!
+        <%= link_to "Join Something!", events_path %>
       </button>
     </div>
   </div>
