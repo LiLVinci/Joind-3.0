@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_27_215816) do
+ActiveRecord::Schema.define(version: 2020_10_04_164434) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -43,13 +43,15 @@ ActiveRecord::Schema.define(version: 2020_09_27_215816) do
     t.string "title"
     t.datetime "date"
     t.datetime "time"
-    t.string "location"
+    t.string "location", default: "Undetermined"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
     t.integer "category_id", null: false
     t.integer "max_participants"
+    t.text "bring_with"
+    t.string "exact_location", default: "Undetermined"
     t.index ["category_id"], name: "index_events_on_category_id"
     t.index ["user_id"], name: "index_events_on_user_id"
   end

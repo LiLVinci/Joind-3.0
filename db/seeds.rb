@@ -7,12 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Seeding Users..."
-me = User.new(name: "Vincent Wittek", email: "wittek.vincent@gmail.com", age: 20, gender: "male", description: "Hi there", instagram: "www.instagram.com", facebook: "www.facebook.com", linkedin: "www.linkedin.com", password: "123456")
+me = User.new(name: "Vincent Wittek", email: "wittek.vincent@gmail.com", age: 20, gender: "male", description: "Hi there, my name is Vincent Wittek, I am a 20 year old guy from Germany (Munich) who currently studies Psychology at UvA, and I am excited for almost any project or activity. No matter if its a trip or something more serious like a project, I am in! 
+My own hobbies include composing music, building websites, growing plants, watching adult cartoons and playing video games ;). I am always happy to get invited to an invite from anybody, so feel free to send me a message!", instagram: "www.instagram.com", facebook: "www.facebook.com", linkedin: "www.linkedin.com", password: "123456")
 image = URI.open("https://res.cloudinary.com/dgnfxdfou/image/upload/v1600368838/egyqiwl6qk0j09ruyljcz8uk9y69.jpg")
 me.image.attach(io: image, filename: "VincentImage", content_type: "image/jpg")
 me.save!
 puts "First User seeded!"
-me = User.new(name: "Test Account", email: "test@gmail.com", age: 20, gender: "male", description: "This is a test account", instagram: "www.instagram.com", facebook: "www.facebook.com", linkedin: "www.linkedin.com", password: "123456")
+me = User.new(name: "Test Account", email: "test@gmail.com", age: 20, gender: "male", description: "This is a test account, its use is to make requests and events, but the guy also looks pretty nice. Right now I am just writing text to make the space in the profile show better ;).", instagram: "www.instagram.com", facebook: "www.facebook.com", linkedin: "www.linkedin.com", password: "123456")
 image = URI.open("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3f01db52-f675-48dc-9c91-f245d99f1486/d2nqynw-af694fd2-e1ba-4e9c-badb-630a48474599.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvM2YwMWRiNTItZjY3NS00OGRjLTljOTEtZjI0NWQ5OWYxNDg2XC9kMm5xeW53LWFmNjk0ZmQyLWUxYmEtNGU5Yy1iYWRiLTYzMGE0ODQ3NDU5OS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.vgj19DpSqoncvBDutgwuXP6Z-UBL5sUaZDUlz-TNUiw")
 me.image.attach(io: image, filename: "RandomPersonImage", content_type: "image/jpg")
 me.save!
