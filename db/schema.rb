@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2020_10_04_164434) do
     t.string "title"
     t.datetime "date"
     t.datetime "time"
-    t.string "location", default: "Undetermined"
+    t.string "location"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 2020_10_04_164434) do
     t.integer "category_id", null: false
     t.integer "max_participants"
     t.text "bring_with"
-    t.string "exact_location", default: "Undetermined"
+    t.string "exact_location"
     t.index ["category_id"], name: "index_events_on_category_id"
     t.index ["user_id"], name: "index_events_on_user_id"
   end
@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(version: 2020_10_04_164434) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
     t.integer "event_id"
-    t.text "description"
+    t.text "description", default: "Hi there! I would love to join your project/activity!"
     t.index ["event_id"], name: "index_requests_on_event_id"
     t.index ["user_id"], name: "index_requests_on_user_id"
   end

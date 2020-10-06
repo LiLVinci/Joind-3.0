@@ -11,8 +11,8 @@
   display: flex;
   justify-content: space-between;
   width: 400px;
-  margin-right: 100px;
-
+  position: absolute;
+  right: 0;
   a {
     color: black;
     font-size: 20px;
@@ -23,14 +23,13 @@
 
 .navbar-right {
   position: absolute;
-  right: 30px
+  right: 0px
 }
 
 .navbar-profile-img {
   img {
   height: 70px;
   width: 70px;
-  border: 1px solid black;
   object-fit: cover;
   border-radius: 50%;
   }

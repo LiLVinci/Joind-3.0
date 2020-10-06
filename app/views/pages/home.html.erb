@@ -8,12 +8,10 @@
         With Joind you can find and create any Project or Activitiy with likeminded students!
       </p>
       <div class="home-banner-buttons">
-        <button class="btn btn-light btn-big">
-          <%=link_to "Create!", new_event_path %>
-        </button>
-        <button class="btn btn-primary btn-standard btn-big">
-          <%=link_to "Find!", events_path %>
-        </button>
+          <%=link_to "Create!", new_event_path, class: "btn btn-light btn-big" %>
+
+          <%=link_to "Find!", events_path, class:"btn btn-primary btn-standard btn-big" %>
+
       </div> 
     </div>
   </div>
@@ -61,30 +59,31 @@
 </div>
 
 <div class="section-explanation">
-  <div class="container d-flex justify-content-center">
-    <div class="explanation-card d-flex">
-      <div class="explanation-card-text">
-        <h1>A new world of things and people is here for you to discover!</h1>
-        <p>- Do the activities you always wanted to try out!<br>
-          - Start or join the projects that define you!<br>
-          - Meet the people who you always wanted to meet<br>
-          - Stop rewatching “The Office” for the 9th time!</p>
-      </div>
-      <div class="explanation-card-image"></div>
-    </div>
-
-  </div>
   <div class="container">
+    <div class="big-card  d-flex justify-content-center", style="padding: 0">
+      <div class="explanation-card d-flex", style="margin: 0">
+        <div class="explanation-card-text">
+          <h1>A new world of things and people is here for you to discover!</h1>
+          <p>- Do the activities you always wanted to try out!<br>
+            - Start or join the projects that define you!<br>
+            - Meet the people who you always wanted to meet<br>
+            - Stop rewatching “The Office” for the 9th time!</p>
+        </div>
+        <div class="explanation-card-image"></div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <div class="container section" >
     <div class="explanation-buttons">
-      <button class="btn btn-light btn-big">
-        <%=link_to "More About Joind", pages_about_path %>
-      </button>
-      <button class="btn btn-standard btn-primary btn-big">
-        <%= link_to "Join Something!", events_path %>
-      </button>
+      <%=link_to "More About Joind", pages_about_path, class:"btn btn-light btn-big" %>
+      <%= link_to "Join Something!", events_path, class:"btn btn-standard btn-primary btn-big" %>
     </div>
   </div>
 </div>
+
 <div class="section-home-categories">
   <div class="container">
     <div class="big-card home-categories">

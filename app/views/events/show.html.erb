@@ -10,7 +10,7 @@
           <div class="event-show-card-host d-flex align-items-center">
             <p>BY: </p>
             <br>
-            <%= cl_image_tag @event.user.image.key, height: 45, width: 45 %>
+            <%= cl_image_tag @event.user.image.key, class:"avatar", height: 45, width: 45 %>
             <p><%= @event.user.name %></p>
           </div>
           <p>PARTICIPANTS: </p>
@@ -35,7 +35,7 @@
       <div class="event-show-card-bottom">
         <p><%= @event.description %></p>
         <div class="event-show-card-request-question d-flex">
-          <%= cl_image_tag @event.user.image.key, height: 75, width: 75 %>
+          <%= cl_image_tag @event.user.image.key, class:"avatar", height: 75, width: 75 %>
           <div class="event-show-card-form">
             <%= form_for (@request) do |f| %>
               <%= f.text_area :description, value: "Say why you want to join 😊 ..." %>
