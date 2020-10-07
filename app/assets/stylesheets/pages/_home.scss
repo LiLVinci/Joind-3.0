@@ -73,6 +73,33 @@
   }
 }
 
+.big-card-carousel {
+  padding: 0;
+  overflow: hidden
+}
+
+.carousel-header {
+  padding: 15px;
+}
+.carousel-item {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  background: rgb(0, 0, 0);
+  
+
+  img {
+    object-fit: cover;
+    opacity: 0.8;
+    
+  }
+}
+
+.carousel-caption {
+  h1 {
+    font-size: 70px;
+  }
+}
 
 .explanation-card {
   background-color: white;

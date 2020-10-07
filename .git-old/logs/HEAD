@@ -1,0 +1,78 @@
+0000000000000000000000000000000000000000 99912667d7b405b60836ac2e9eb3d6bec3aecfa9 vincent wittek# <wittek.vincent@gmail.com> 1599506034 +0200	clone: from git@github.com:LiLVinci/Joind-3.0.git
+99912667d7b405b60836ac2e9eb3d6bec3aecfa9 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599507212 +0200	commit: added homepage
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 99912667d7b405b60836ac2e9eb3d6bec3aecfa9 vincent wittek# <wittek.vincent@gmail.com> 1599507239 +0200	checkout: moving from master to origin/master
+99912667d7b405b60836ac2e9eb3d6bec3aecfa9 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599507274 +0200	checkout: moving from 99912667d7b405b60836ac2e9eb3d6bec3aecfa9 to master
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599507324 +0200	checkout: moving from master to devise_try1
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508518 +0200	checkout: moving from devise_try1 to master
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508543 +0200	checkout: moving from master to devise_try1
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508564 +0200	reset: moving to HEAD
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508575 +0200	reset: moving to master
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508589 +0200	reset: moving to master
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508625 +0200	checkout: moving from devise_try1 to master
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508638 +0200	checkout: moving from master to devise_try1
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508654 +0200	checkout: moving from devise_try1 to master
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508663 +0200	reset: moving to master
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599508998 +0200	reset: moving to HEAD
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 vincent wittek# <wittek.vincent@gmail.com> 1599681436 +0200	reset: moving to HEAD
+6af67f542c944df8d5e47b8c0d9c9d67cc70aec3 12d1184e5b5caf1f6603e6d5f7d73d669c7335f9 vincent wittek# <wittek.vincent@gmail.com> 1599681439 +0200	pull: Fast-forward
+12d1184e5b5caf1f6603e6d5f7d73d669c7335f9 12d1184e5b5caf1f6603e6d5f7d73d669c7335f9 vincent wittek# <wittek.vincent@gmail.com> 1599684710 +0200	checkout: moving from master to EventIndex
+12d1184e5b5caf1f6603e6d5f7d73d669c7335f9 7d3179ffa760a9d326cc6876f21fb6f4c2c635af vincent wittek# <wittek.vincent@gmail.com> 1599688321 +0200	commit: added event index page
+7d3179ffa760a9d326cc6876f21fb6f4c2c635af 12d1184e5b5caf1f6603e6d5f7d73d669c7335f9 vincent wittek# <wittek.vincent@gmail.com> 1599688376 +0200	checkout: moving from EventIndex to master
+12d1184e5b5caf1f6603e6d5f7d73d669c7335f9 928d5d04210092bd7491413b39a9dc35f162124d vincent wittek# <wittek.vincent@gmail.com> 1599688381 +0200	pull: Fast-forward
+928d5d04210092bd7491413b39a9dc35f162124d 928d5d04210092bd7491413b39a9dc35f162124d vincent wittek# <wittek.vincent@gmail.com> 1599688399 +0200	checkout: moving from master to EventCreate
+928d5d04210092bd7491413b39a9dc35f162124d 57ede1839c007a5aea51b74e910a503592ebaa82 vincent wittek# <wittek.vincent@gmail.com> 1599692243 +0200	commit: added event create page, added show page, added better back buttons, added home links to sign in and log out
+57ede1839c007a5aea51b74e910a503592ebaa82 928d5d04210092bd7491413b39a9dc35f162124d vincent wittek# <wittek.vincent@gmail.com> 1599692266 +0200	checkout: moving from EventCreate to master
+928d5d04210092bd7491413b39a9dc35f162124d 10f04ddc2ed803830c3c700d85b60f4f3b73ae6a vincent wittek# <wittek.vincent@gmail.com> 1599692287 +0200	pull: Fast-forward
+10f04ddc2ed803830c3c700d85b60f4f3b73ae6a 10f04ddc2ed803830c3c700d85b60f4f3b73ae6a vincent wittek# <wittek.vincent@gmail.com> 1599825051 +0200	checkout: moving from master to MakingCategoris
+10f04ddc2ed803830c3c700d85b60f4f3b73ae6a 7709abed1d72e7f8ab51fc58563c07674f0d3648 vincent wittek# <wittek.vincent@gmail.com> 1599827427 +0200	commit: implemented categories BUT its not yet possible to choose one when creating
+7709abed1d72e7f8ab51fc58563c07674f0d3648 10f04ddc2ed803830c3c700d85b60f4f3b73ae6a vincent wittek# <wittek.vincent@gmail.com> 1599827474 +0200	checkout: moving from MakingCategoris to master
+10f04ddc2ed803830c3c700d85b60f4f3b73ae6a e38328383ac63fb200d672013d8a15dcc732e5a9 vincent wittek# <wittek.vincent@gmail.com> 1599827478 +0200	pull: Fast-forward
+e38328383ac63fb200d672013d8a15dcc732e5a9 e38328383ac63fb200d672013d8a15dcc732e5a9 vincent wittek# <wittek.vincent@gmail.com> 1599860418 +0200	checkout: moving from master to JoinButton
+e38328383ac63fb200d672013d8a15dcc732e5a9 c7a19313bca283dc3e95d98639322cfcd8a14c55 vincent wittek# <wittek.vincent@gmail.com> 1599862131 +0200	commit: added a join! button with lets you join an event
+c7a19313bca283dc3e95d98639322cfcd8a14c55 e38328383ac63fb200d672013d8a15dcc732e5a9 vincent wittek# <wittek.vincent@gmail.com> 1599862169 +0200	checkout: moving from JoinButton to master
+e38328383ac63fb200d672013d8a15dcc732e5a9 e38328383ac63fb200d672013d8a15dcc732e5a9 vincent wittek# <wittek.vincent@gmail.com> 1599862220 +0200	checkout: moving from master to AddingHostSection
+e38328383ac63fb200d672013d8a15dcc732e5a9 e38328383ac63fb200d672013d8a15dcc732e5a9 vincent wittek# <wittek.vincent@gmail.com> 1599862247 +0200	checkout: moving from AddingHostSection to master
+e38328383ac63fb200d672013d8a15dcc732e5a9 e4fbffd793b3c2286c743d69262b7c436357a0c5 vincent wittek# <wittek.vincent@gmail.com> 1599862251 +0200	pull: Fast-forward
+e4fbffd793b3c2286c743d69262b7c436357a0c5 e38328383ac63fb200d672013d8a15dcc732e5a9 vincent wittek# <wittek.vincent@gmail.com> 1599862256 +0200	checkout: moving from master to AddingHostSection
+e38328383ac63fb200d672013d8a15dcc732e5a9 e4fbffd793b3c2286c743d69262b7c436357a0c5 vincent wittek# <wittek.vincent@gmail.com> 1599862271 +0200	checkout: moving from AddingHostSection to master
+e4fbffd793b3c2286c743d69262b7c436357a0c5 e4fbffd793b3c2286c743d69262b7c436357a0c5 vincent wittek# <wittek.vincent@gmail.com> 1599862293 +0200	checkout: moving from master to ImplementingHostSection
+e4fbffd793b3c2286c743d69262b7c436357a0c5 33ad2aca636e9c73b98637672df371cbb64af84c vincent wittek# <wittek.vincent@gmail.com> 1599863577 +0200	commit: made a requests dashboard
+33ad2aca636e9c73b98637672df371cbb64af84c e4fbffd793b3c2286c743d69262b7c436357a0c5 vincent wittek# <wittek.vincent@gmail.com> 1599863593 +0200	checkout: moving from ImplementingHostSection to master
+e4fbffd793b3c2286c743d69262b7c436357a0c5 219c5f67fe6764d7f037b32506a65de35eb10652 vincent wittek# <wittek.vincent@gmail.com> 1599863617 +0200	pull: Fast-forward
+219c5f67fe6764d7f037b32506a65de35eb10652 219c5f67fe6764d7f037b32506a65de35eb10652 vincent wittek# <wittek.vincent@gmail.com> 1599863643 +0200	checkout: moving from master to HostDashboard
+219c5f67fe6764d7f037b32506a65de35eb10652 a6a7fdc862cb42c7799b26a1ec3c98eb43d71c53 vincent wittek# <wittek.vincent@gmail.com> 1599868977 +0200	commit: added request reactions by host
+a6a7fdc862cb42c7799b26a1ec3c98eb43d71c53 219c5f67fe6764d7f037b32506a65de35eb10652 vincent wittek# <wittek.vincent@gmail.com> 1599869008 +0200	checkout: moving from HostDashboard to master
+219c5f67fe6764d7f037b32506a65de35eb10652 d89a35d64312a00dfe50f4d5d08cf8df86374287 vincent wittek# <wittek.vincent@gmail.com> 1599869011 +0200	pull: Fast-forward
+d89a35d64312a00dfe50f4d5d08cf8df86374287 e9295946e423bf863ec91b552512c6255c19bbb9 vincent wittek# <wittek.vincent@gmail.com> 1600006901 +0200	pull: Fast-forward
+e9295946e423bf863ec91b552512c6255c19bbb9 c399bae3b2ef4757f1cd4ac113cd2f9c3868d5c8 vincent wittek# <wittek.vincent@gmail.com> 1600009814 +0200	commit: Added Profile show and Edit, everything works exept for a proper pasword editing page
+c399bae3b2ef4757f1cd4ac113cd2f9c3868d5c8 460d59cbe72fa799eeb191d8228c75935003f47a vincent wittek# <wittek.vincent@gmail.com> 1600029831 +0200	commit: loggin doesnt show when your logged in
+460d59cbe72fa799eeb191d8228c75935003f47a 460d59cbe72fa799eeb191d8228c75935003f47a vincent wittek# <wittek.vincent@gmail.com> 1600191309 +0200	checkout: moving from master to ImplementingBootstrap
+460d59cbe72fa799eeb191d8228c75935003f47a 0a9b1b00c05b65b0f1bf10e3917fa07a8964e894 vincent wittek# <wittek.vincent@gmail.com> 1600192595 +0200	commit: I think Bootstrap is added now
+0a9b1b00c05b65b0f1bf10e3917fa07a8964e894 460d59cbe72fa799eeb191d8228c75935003f47a vincent wittek# <wittek.vincent@gmail.com> 1600192653 +0200	checkout: moving from ImplementingBootstrap to master
+460d59cbe72fa799eeb191d8228c75935003f47a 03100913e8b70a653e21b5e4c8cf971086d3e835 vincent wittek# <wittek.vincent@gmail.com> 1600192657 +0200	pull: Fast-forward
+03100913e8b70a653e21b5e4c8cf971086d3e835 03100913e8b70a653e21b5e4c8cf971086d3e835 vincent wittek# <wittek.vincent@gmail.com> 1600192671 +0200	checkout: moving from master to NavbarFrontend
+03100913e8b70a653e21b5e4c8cf971086d3e835 03100913e8b70a653e21b5e4c8cf971086d3e835 vincent wittek# <wittek.vincent@gmail.com> 1600212485 +0200	checkout: moving from NavbarFrontend to HomeFrontend
+03100913e8b70a653e21b5e4c8cf971086d3e835 6d9d16928116703a1ad9b6e9f82c4c3843c057a1 vincent wittek# <wittek.vincent@gmail.com> 1600212516 +0200	commit: added basic home frontend (navbar, banner)
+6d9d16928116703a1ad9b6e9f82c4c3843c057a1 a268f8ee411a093099b4d40c4094e951064c7026 vincent wittek# <wittek.vincent@gmail.com> 1600276865 +0200	commit: home layour
+a268f8ee411a093099b4d40c4094e951064c7026 03100913e8b70a653e21b5e4c8cf971086d3e835 vincent wittek# <wittek.vincent@gmail.com> 1600277023 +0200	checkout: moving from HomeFrontend to master
+03100913e8b70a653e21b5e4c8cf971086d3e835 712f775517f6abd5e266f9e3816c4f86c247167d vincent wittek# <wittek.vincent@gmail.com> 1600277028 +0200	pull: Fast-forward
+712f775517f6abd5e266f9e3816c4f86c247167d 712f775517f6abd5e266f9e3816c4f86c247167d vincent wittek# <wittek.vincent@gmail.com> 1600277055 +0200	checkout: moving from master to User+EventImages
+712f775517f6abd5e266f9e3816c4f86c247167d 18d97132a935817140adcb9b2eca7e6c29d29113 vincent wittek# <wittek.vincent@gmail.com> 1600277426 +0200	commit: Add dot env for secutrity
+18d97132a935817140adcb9b2eca7e6c29d29113 5850b1601ccbd2c36291083775ac000b3ec4348f vincent wittek# <wittek.vincent@gmail.com> 1600372844 +0200	commit: Added profile image and images to events
+5850b1601ccbd2c36291083775ac000b3ec4348f 712f775517f6abd5e266f9e3816c4f86c247167d vincent wittek# <wittek.vincent@gmail.com> 1600372888 +0200	checkout: moving from User+EventImages to master
+712f775517f6abd5e266f9e3816c4f86c247167d 189b661a38bd97e29ca7ffa091664d77d94bcb41 vincent wittek# <wittek.vincent@gmail.com> 1600372892 +0200	pull: Fast-forward
+189b661a38bd97e29ca7ffa091664d77d94bcb41 f2b8e6e54975e35b954415ab1b8e3fd1d2d98a8f vincent wittek# <wittek.vincent@gmail.com> 1600451931 +0200	commit: added nice Homepage
+f2b8e6e54975e35b954415ab1b8e3fd1d2d98a8f 8628469bc7ba2176e45e4ca52167366fcdee21da vincent wittek# <wittek.vincent@gmail.com> 1600470114 +0200	commit: Added basic event index frontend
+8628469bc7ba2176e45e4ca52167366fcdee21da 3c16e37607c5a06d30ea90fbee9d7e4e788468dd vincent wittek# <wittek.vincent@gmail.com> 1600590998 +0200	commit: added event show card
+3c16e37607c5a06d30ea90fbee9d7e4e788468dd f5e8244642e42d9e24edd37478257a8b8b8f5201 vincent wittek# <wittek.vincent@gmail.com> 1600696450 +0200	commit: request overview done
+f5e8244642e42d9e24edd37478257a8b8b8f5201 b25b9dd9f92ecc397e5e4094718147b518d28284 vincent wittek# <wittek.vincent@gmail.com> 1600805575 +0200	commit: Added User show page
+b25b9dd9f92ecc397e5e4094718147b518d28284 c9199cfc20447c4d67c9f9a8b8e80a517bdf544c vincent wittek# <wittek.vincent@gmail.com> 1601227002 +0200	commit: footer added
+c9199cfc20447c4d67c9f9a8b8e80a517bdf544c df346bcd39948e1b7f9a5fe78a476234fcb5c209 vincent wittek# <wittek.vincent@gmail.com> 1601242726 +0200	commit: added stuff
+df346bcd39948e1b7f9a5fe78a476234fcb5c209 c9d3f5aaae7dbc360f4d4ee84a693bb131199497 vincent wittek# <wittek.vincent@gmail.com> 1601246653 +0200	commit: added participations for event.show
+c9d3f5aaae7dbc360f4d4ee84a693bb131199497 04d8cce5d06a99fe92e4eaad2bad314eb9bd6e2b vincent wittek# <wittek.vincent@gmail.com> 1601253805 +0200	commit: added more stuff
+04d8cce5d06a99fe92e4eaad2bad314eb9bd6e2b 04d8cce5d06a99fe92e4eaad2bad314eb9bd6e2b vincent wittek# <wittek.vincent@gmail.com> 1601293791 +0200	checkout: moving from master to MakingEventDeletePossible
+04d8cce5d06a99fe92e4eaad2bad314eb9bd6e2b 04d8cce5d06a99fe92e4eaad2bad314eb9bd6e2b vincent wittek# <wittek.vincent@gmail.com> 1601294381 +0200	checkout: moving from MakingEventDeletePossible to master
+04d8cce5d06a99fe92e4eaad2bad314eb9bd6e2b e12957310dbfdee159d4de5e397abf0d4e55f373 vincent wittek# <wittek.vincent@gmail.com> 1601380651 +0200	commit: added a bunch of other stuff
+e12957310dbfdee159d4de5e397abf0d4e55f373 aa044f580a32f005fae5033816e9f6d8a31113a5 vincent wittek# <wittek.vincent@gmail.com> 1601840200 +0200	pull: Fast-forward
+aa044f580a32f005fae5033816e9f6d8a31113a5 4e579fa76f8d3df65d68a3dcd91d658d8471262d vincent wittek# <wittek.vincent@gmail.com> 1602010196 +0200	commit: added event create frontend
+4e579fa76f8d3df65d68a3dcd91d658d8471262d 6f14acbe44504081a811bca4114b8d9570c1688f vincent wittek# <wittek.vincent@gmail.com> 1602028598 +0200	commit: added a better event index cards
