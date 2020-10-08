@@ -10,10 +10,8 @@
           <div class="event-show-card-host d-flex align-items-center">
             <p>BY: </p>
             <br>
-            <%= link_to user_path(@event.user), class:"d-flex align-items-center" do%>
-              <%= cl_image_tag @event.user.image.key, class:"avatar", height: 45, width: 45 %>
-              <p><%= @event.user.name %></p>
-            <% end %>
+            <%= cl_image_tag @event.user.image.key, class:"avatar", height: 45, width: 45 %>
+            <p><%= @event.user.name %></p>
           </div>
           <p>PARTICIPANTS: </p>
             <br>

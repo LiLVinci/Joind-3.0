@@ -23,10 +23,8 @@
             <% end %>
             <div class="event-other-info d-flex align-items-center">
               <div class="event-index-participants d-flex align-items-center">
-                <%= link_to user_path(event.user), class:"d-flex align-items-center" do %>
-                  <%= cl_image_tag event.user.image.key, height: 30, width: 30 %>
-                  <p><%= event.user.name %></p>
-                <% end %>
+                <%= cl_image_tag event.user.image.key, height: 30, width: 30 %>
+                <p><%= event.user.name %></p>
               </div>
               <div class="event-index-card-divider" style="width: 5%"></div>
               <div class="event-index-date-location">

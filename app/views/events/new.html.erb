@@ -22,14 +22,14 @@
           <div class="event-create-first-other event-create-first">
             <h5>Select a Category:</h5>
             <div id="event-create-category">
-              <%= f.select :category, [["Sports", 1], ["Project", 2], ["Creative", 3], ["Startup", 4], ["Social", 5], ["Other", 6]], :prompt => "Select One..." %>
+              <%= f.select :category, [["Sports", 1], ["Project", 2], ["Creative", 3], ["Startup", 4], ["Social", 5], ["Other", 6]], :prompt => "Select One" %>
             </div>
             
             <div class="divider divider-line-horizontal "></div>
             <div class="event-create-title-description form-input">
               <h5>Enter a Name and Description:</h5>
-              <%= f.text_field :title, placeholder: "Name of the Project/Activity..." %>
-              <%= f.text_area :description, placeholder: "Decription of the Project/Activity..." %>
+              <%= f.text_field :title, placeholder: "Name of the Project/Activity" %>
+              <%= f.text_area :description, placeholder: "Decription of the Project/Activity" %>
             </div>
           </div>
         </div>
@@ -61,12 +61,12 @@
           <div class="event-create-general-location d-flex">
             <h5>Select general Location: </h5>	
             <div class="event-create-date-time-spacer"></div>
-            <%= f.text_field :location, placeholder: 'Something like "Student Hotel City" or "Vondelpark"...' %>
+            <%= f.text_field :location, placeholder: "Enter the general location" %>
           </div>
           <div class="event-create-exact-location d-flex">
             <h5>Select exact Location: </h5>	
             <div class="event-create-date-time-spacer"></div>
-            <%= f.text_field :exact_location, placeholder: 'Something like "Student Hotel City-Room 931"...' %>
+            <%= f.text_field :exact_location, placeholder: "Enter the exact location" %>
           </div>
         </div>
 
@@ -78,7 +78,7 @@
         <div class="event-create-bring-with form-input d-flex">
           <h5>If necessary, enter what people should bring: </h5>	
           <div class="event-create-date-time-spacer"></div>
-          <%= f.text_area :bring_with, placeholder:"Stuff people should bring to have the most fun..." %>
+          <%= f.text_area :bring_with, placeholder:"Stuff people should bring..." %>
         </div>
         <div class="event-create-submit d-flex justify-content-between">
           <%= f.submit "Create", class:"btn btn-standard btn-big event-create-submit-button" %>

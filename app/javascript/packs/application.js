@@ -17,8 +17,3 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import 'bootstrap';
-import { initChatCable } from '../channels/chat_channel';
-
-document.addEventListener("turbolinks:load", () => {
-  initChatCable();
-});

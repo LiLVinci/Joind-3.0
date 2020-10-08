@@ -28,8 +28,6 @@ gem "devise"
 gem "pundit"
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
-gem 'simple_form'
-
 
 
 # Reduces boot times through caching; required in config/boot.rb
