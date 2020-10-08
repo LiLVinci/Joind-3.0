@@ -24,6 +24,7 @@ const initChatCable = () => {
     consumer.subscriptions.create({ channel: "ChatChannel", id: id }, {
       received(data) {
         messagesContainer.insertAdjacentHTML('beforeend', data);
+        console.log(data)
       },
     });
   }
