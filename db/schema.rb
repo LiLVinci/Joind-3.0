@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_07_213216) do
+ActiveRecord::Schema.define(version: 2020_10_04_164434) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -39,12 +39,6 @@ ActiveRecord::Schema.define(version: 2020_10_07_213216) do
     t.string "category"
   end
 
-  create_table "chats", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.datetime "date"
@@ -60,16 +54,6 @@ ActiveRecord::Schema.define(version: 2020_10_07_213216) do
     t.string "exact_location"
     t.index ["category_id"], name: "index_events_on_category_id"
     t.index ["user_id"], name: "index_events_on_user_id"
-  end
-
-  create_table "messages", force: :cascade do |t|
-    t.string "content"
-    t.integer "chat_id", null: false
-    t.integer "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["chat_id"], name: "index_messages_on_chat_id"
-    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "participations", force: :cascade do |t|
@@ -114,8 +98,6 @@ ActiveRecord::Schema.define(version: 2020_10_07_213216) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "events", "categories"
   add_foreign_key "events", "users"
-  add_foreign_key "messages", "chats"
-  add_foreign_key "messages", "users"
   add_foreign_key "participations", "events"
   add_foreign_key "participations", "users"
   add_foreign_key "requests", "events"
