@@ -52,3 +52,6 @@ event3.image.attach(io: image3, filename: "MeditationImage", content_type: "imag
 event3.save!
 puts "Third event seeded!"
 puts "Seeding Events done!"
+
+
+# This is just to mak eht next push different
