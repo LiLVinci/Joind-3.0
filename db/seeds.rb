@@ -52,3 +52,6 @@ event3.image.attach(io: image3, filename: "MeditationImage", content_type: "imag
 event3.save!
 puts "Third event seeded!"
 puts "Seeding Events done!"
+
+puts "Just making a test chat"
+Chat.create(name: "Testchat")
