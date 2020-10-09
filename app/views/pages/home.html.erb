@@ -167,7 +167,7 @@
   <li><%=link_to "Create Something", new_event_path %></li>
   <% if user_signed_in? %>
     <li><%=link_to "My Profile", user_path(current_user) %></li>
-    <li><%=link_to "Messages", root_path %></li>
+    <li><%=link_to "Messages", chats_path %></li>
   <% end %>
   <li><%=link_to "Requests Overview", requests_path %></li>
   <li><%=link_to "Events Overview", events_overview_path %></li>
@@ -184,14 +184,3 @@
 <% else %>
   <p>You are currently not signed in </p>
 <% end %>
-
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
-  </div>
-</div>

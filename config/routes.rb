@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   get "events_overview", to: "users#events_overview"
 
-  resources :chats, only: :show do
+  resources :chats, only: [:show, :index] do
     resources :messages, only: :create
   end
 end

@@ -1,0 +1,7 @@
+<% @chats.each do |chat| %>
+  <%= chat.name %>
+  <%= link_to "go there", chat_path(chat) %>
+
+  
+
+<% end %>

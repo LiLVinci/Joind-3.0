@@ -1,3 +1,57 @@
+<div class="chat-body d-flex">
+  <div class="chat-index-left">
+    <div class="chat-index-left-profile d-flex">
+      <div class="chat-index-left-profile-avatar ">
+        <%= cl_image_tag @user.image.key%>
+      </div>
+      <div class="chat-index-left-profile-name d-flex align-items-center">
+        <%= @user.name %>
+      </div>
+    </div>
+  </div>
+  <div class="chat-index-right">
+    <div class="chat-show-right-reciepent d-flex">
+      <p>Reciepent_name</p>
+      <%= cl_image_tag @user.image.key, class: "message-show-reciepent-avatar" %>
+    </div>
+    <div class="chat-show-right-messages">
+      <% @chat.messages.each do |message| %>
+        <% if message.user == current_user %>
+          <div class="message-show-current-user d-flex">
+            <div class="message-show-current-user-message">
+              <%= message.content %>
+            </div>
+            <%= cl_image_tag @user.image.key, class: "message-show-current-user-avatar"%>
+          </div>
+        <% else %>
+          <div class="message-show-current-user d-flex">
+            <%= cl_image_tag @user.image.key, class: "message-show-other-user-avatar"%>
+            <div class="message-show-other-user-message">
+              <%= message.content %>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="message-create-bar d-flex">
+      <%= simple_form_for [ @chat, @message ], remote: true do |f| %>
+        <div class="d-flex">
+          <%= f.input :content, label: false, placeholder: "Message ##{@chat.name}" %>
+          <%= f.submit %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <h1>#<%= @chat.name %></h1>
 <div id="messages" data-chat-id="<%= @chat.id %>">
